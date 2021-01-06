@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1172</width>
+    <height>778</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../QRCFile/Application.qrc">
+    <normaloff>:/Icon/ImageFile/Icon/AppIcon.png</normaloff>:/Icon/ImageFile/Icon/AppIcon.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>0.500000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+border:4px solid rgb(255, 95, 74);
+border-radius:30px;
+background-color: rgba(255, 255, 255,150);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="10,0">
+   <property name="spacing">
+    <number>13</number>
+   </property>
+   <property name="leftMargin">
+    <number>13</number>
+   </property>
+   <property name="topMargin">
+    <number>13</number>
+   </property>
+   <property name="rightMargin">
+    <number>13</number>
+   </property>
+   <property name="bottomMargin">
+    <number>13</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="result_area" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+       <widget class="QLabel" name="Img_label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,1,1,1,1,2">
+     <property name="spacing">
+      <number>7</number>
+     </property>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item alignment="Qt::AlignBottom">
+      <widget class="QPushButton" name="ImgSelect_btn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+       </property>
+       <property name="text">
+        <string>图片选择</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignBottom">
+      <widget class="QPushButton" name="Recognize_btn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+       </property>
+       <property name="text">
+        <string>识别</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignBottom">
+      <widget class="QPushButton" name="Clean_btn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item alignment="Qt::AlignBottom">
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+       </property>
+       <property name="text">
+        <string>返回</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../QRCFile/Application.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>ImgSelect_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>select_image()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>440</x>
+     <y>732</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>444</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Recognize_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>recognize_image()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>582</x>
+     <y>732</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>636</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Clean_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>723</x>
+     <y>732</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>564</x>
+     <y>620</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>return_ui()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>864</x>
+     <y>732</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>728</x>
+     <y>685</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>select_image()</slot>
+  <slot>recognize_image()</slot>
+  <slot>clear()</slot>
+  <slot>return_ui()</slot>
+ </slots>
+</ui>

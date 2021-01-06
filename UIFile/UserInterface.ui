@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserInterface</class>
+ <widget class="QWidget" name="UserInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1256</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>民族建筑图像识别系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../QRCFile/Application.qrc">
+    <normaloff>:/Icon/ImageFile/Icon/AppIcon.png</normaloff>:/Icon/ImageFile/Icon/AppIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#UserInterface
+{border-image: url(:/BackgroundIMG/ImageFile/IMG/userinterface_bg.jpg);
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,8">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>15</number>
+   </property>
+   <property name="topMargin">
+    <number>15</number>
+   </property>
+   <property name="rightMargin">
+    <number>15</number>
+   </property>
+   <property name="bottomMargin">
+    <number>15</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="option_area" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0">
+      <property name="spacing">
+       <number>20</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ir_btn">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+
+	background-color: rgba(33, 174, 250,150);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgba(78, 196, 250,150);	
+}
+QPushButton:pressed{	
+	background-color: rgba(24, 131, 188,150);
+}</string>
+        </property>
+        <property name="text">
+         <string>     图像识别     </string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+
+	background-color: rgba(33, 174, 250,150);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgba(78, 196, 250,150);	
+}
+QPushButton:pressed{	
+	background-color: rgba(24, 131, 188,150);
+}</string>
+        </property>
+        <property name="text">
+         <string>查看特征图</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ir_btn_2">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+
+	background-color: rgba(33, 174, 250,150);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgba(78, 196, 250,150);	
+}
+QPushButton:pressed{	
+	background-color: rgba(24, 131, 188,150);
+}</string>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="function_area" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../QRCFile/Application.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>ir_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>UserInterface</receiver>
+   <slot>ir_pan_show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>179</x>
+     <y>319</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ir_btn_2</sender>
+   <signal>clicked()</signal>
+   <receiver>UserInterface</receiver>
+   <slot>exit_ui()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>439</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>UserInterface</receiver>
+   <slot>fm_pan_show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>358</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-41</x>
+     <y>334</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ir_pan_show()</slot>
+  <slot>exit_ui()</slot>
+  <slot>fm_pan_show()</slot>
+ </slots>
+</ui>

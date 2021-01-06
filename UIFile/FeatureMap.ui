@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1172</width>
+    <height>778</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../QRCFile/Application.qrc">
+    <normaloff>:/Icon/ImageFile/Icon/AppIcon.png</normaloff>:/Icon/ImageFile/Icon/AppIcon.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>0.500000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+border:4px solid rgb(255, 95, 74);
+border-radius:30px;
+background-color: rgba(255, 255, 255,150);
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,8">
+   <item>
+    <widget class="QWidget" name="Option_area" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ImgSelect_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>图片选择</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="CreateFM_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>生成特征图</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Conv1">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>第一卷积层</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>批正则化层</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Maxpool_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>最大池化层</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ResBlock1_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>第一残差块</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ResBlock2_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>第二残差块</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ResBlock3_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>第三残差块</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ResBlock4_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>第四残差块</string>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Relu_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>激活函数</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Save_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>保存图片</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Return_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{	
+	background-color: rgb(33, 174, 250);
+	color: rgb(255, 255, 255);
+	border-radius:10px;	
+	font: 16pt &quot;楷体&quot;;
+}
+QPushButton:hover{	
+	background-color: rgb(78, 196, 250);	
+}
+QPushButton:pressed{	
+	background-color: rgb(24, 131, 188);
+}</string>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="Result_area" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="9,1">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+       <widget class="QLabel" name="Img_label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+       <widget class="QLabel" name="Result_label">
+        <property name="styleSheet">
+         <string notr="true">	font: 16pt &quot;楷体&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../QRCFile/Application.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>Return_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>return_ui()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>176</x>
+     <y>710</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-136</x>
+     <y>629</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ImgSelect_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>select_image()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-112</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Save_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>save_pic()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>144</x>
+     <y>628</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-68</x>
+     <y>584</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Conv1</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>conv1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-47</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Maxpool_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>maxpool()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-48</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ResBlock1_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>resblock1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-36</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ResBlock2_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>resblock2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>159</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-157</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ResBlock3_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>resblock3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>163</x>
+     <y>463</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-61</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ResBlock4_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>resblock4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>518</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-102</x>
+     <y>468</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Relu_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>relu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>600</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-170</x>
+     <y>546</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>CreateFM_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>createfm()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>109</x>
+     <y>160</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-16</x>
+     <y>171</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>bn1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-10</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>select_image()</slot>
+  <slot>clear()</slot>
+  <slot>return_ui()</slot>
+  <slot>save_pic()</slot>
+  <slot>conv1()</slot>
+  <slot>maxpool()</slot>
+  <slot>resblock1()</slot>
+  <slot>resblock2()</slot>
+  <slot>resblock3()</slot>
+  <slot>resblock4()</slot>
+  <slot>relu()</slot>
+  <slot>createfm()</slot>
+  <slot>bn1()</slot>
+ </slots>
+</ui>

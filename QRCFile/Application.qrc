@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="Icon">
+    <file>../ImageFile/Icon/AppIcon.png</file>
+    <file>../ImageFile/Icon/Password.png</file>
+    <file>../ImageFile/Icon/PasswordInvisible.png</file>
+    <file>../ImageFile/Icon/PasswordVisible.png</file>
+    <file>../ImageFile/Icon/RegistIcon.png</file>
+    <file>../ImageFile/Icon/Shield.png</file>
+    <file>../ImageFile/Icon/UserIcon.png</file>
+  </qresource>
+  <qresource prefix="BackgroundIMG">
+    <file>../ImageFile/IMG/userinterface_bg.jpg</file>
+    <file>../ImageFile/IMG/login_top_bg.gif</file>
+    <file>../ImageFile/IMG/bgi1.jpg</file>
+    <file>../ImageFile/IMG/bgi2.jpg</file>
+    <file>../ImageFile/IMG/bgi3.jpg</file>
+    <file>../ImageFile/IMG/bgi4.jpg</file>
+  </qresource>
+</RCC>
